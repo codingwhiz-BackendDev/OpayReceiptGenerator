@@ -1,0 +1,56 @@
+ * {
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+ }
+
+ body {
+     margin: 0% auto;
+     background-color: whitesmoke;
+     font-family: 'Open Sans';
+ }
+
+ .containers {
+     max-width: 1000px;
+     position: relative;
+ }
+
+ h1 {
+     text-align: center;
+     color: #22ce22;
+     padding: 1rem;
+     margin-bottom: 0.5rem;
+ }
+
+ img {
+     border-radius: 50%;
+ }
+
+ .logo {
+     display: flex;
+     place-content: center;
+     margin-bottom: 1.5rem;
+     font-size: 2rem;
+     color: #22ce22;
+ }
+
+ input {
+
+     border: none;
+     outline: none;
+     display: block;
+     margin-inline: auto;
+     padding: 15px 25px;
+     width: 100%;
+     border-radius: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ input:first-of-type {
+     text-transform: uppercase;
+ }
+
+ input[type=submit] {
+     background-color: #22ce22;
+     color: #fff;
+ }

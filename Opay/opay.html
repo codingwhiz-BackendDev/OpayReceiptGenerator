@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="opay.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Opay</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="left-angle">
+                <i class="fa fa-angle-left"></i>
+                Transaction Details
+            </div>
+            <div class="user">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+        </header>
+
+        <div class="success">
+            <p>
+                <img src="icon.png" alt="" width="40" height="40">
+                <b>Transfer to <span id="receiver">RUTH GBEMISOLA FAWUYI</span></b>
+            </p>
+            <h3><span id="amountPaid">&#x20A6<b>150.00</b></span></h3>
+            <p class="check-circle"><i class="fa fa-check-circle"></i> successful</p>
+        </div>
+
+        <div class="details">
+            <p><b>Transaction Details</b></p>
+            <div class="details-content">
+                <p class="lighter">Recipient Details</p>
+
+                <p class="name">
+                    <span id="receiver1">RUTH GBEMISOLA FAWUYI </span>
+                    <br>
+                    <span id="receiver-bank">Opay</span> | <span id="receiver-account">8132246744</span>
+                </p>
+            </div>
+
+            <div class="details-content">
+                <p class="lighter">Transaction Type</p>
+                <p>
+                    Transfer to <span id="receiver-bank1">Opay</span> Account
+                </p>
+            </div>
+
+            <div class="details-content">
+                <p class="lighter">Transaction No.</p>
+                <p>
+                    24145644211600000534
+                    <i class="far fa-clone"></i>
+                </p>
+            </div>
+
+            <div class="details-content">
+                <p class="lighter">Payment Method</p>
+                <p>
+                    Wallet
+                </p>
+            </div>
+
+            <div class="details-content">
+                <p class="lighter">Transaction Date</p>
+                <p>
+                    <span id="transferDate"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="more-actions">
+        <p><b>More Actions</b></p>
+        <div class="more-actions-content">
+            <p class="lighter">Choose Category</p>
+            <p>Transfer <i class="fa fa-angle-right"></i></p>
+        </div>
+
+        <div class="options">
+            <p>
+                <i class="fa fa-repeat"></i>
+                Transfer Again
+            </p>
+            <p>
+                <i class="fa fa-list"></i>
+                View Records
+            </p>
+        </div>
+    </div>
+
+
+    <div class="buttons">
+        <button id="button1">Report an issue</button>
+        <button id="button2">Share Receipt</button>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="containers">
+        <h1>Generate Receipt</h1>
+        <div class="logo">
+            <img src="icon.png" alt="" width="40" height="40">
+            <p>Pay</p>
+        </div>
+        <input type="text" id="receipientName" placeholder="Input receipient full name">
+        <input type="number" id="amount" placeholder="Input Amount">
+        <input type="number" id="receipientAccount" placeholder="Input Receipient Account number">
+        <input type="text" id="receipientBank" placeholder="Input Receipent bank">
+        <input type="submit" onclick="generate()" value="Generate">
+
+
+
+        <div id="successMessage" class="success-message">
+            <i class="fa fa-check-circle"></i> Transfer Successfully Generated!
+        </div>
+    </div>
+
+
+    <script src="opay.js"></script>
+</body>
+
+</html>
